@@ -11,4 +11,6 @@ pathlib>=1.0.1
 tqdm>=4.62.3
 pytest>=6.2.5
 PyYAML>=6.0
+streamlit
+plotly
 -e .
