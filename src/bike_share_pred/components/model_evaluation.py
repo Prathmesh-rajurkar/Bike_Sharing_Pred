@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import os 
+import sys
 from sklearn.metrics import mean_squared_error,mean_absolute_error,r2_score
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')))
 from src.bike_share_pred import logger
@@ -24,7 +25,7 @@ class ModelEval():
 
     def save_model(self):
         try:
-            joblib.dump(self.model,os.path.join("models","model.pkl"))
+            joblib.dump(self.model,os.path.join("artifacts","models\model.pkl"))
         except Exception as e:
             raise e
 
